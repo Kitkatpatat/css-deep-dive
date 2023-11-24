@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headspace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-blue-500 text-white p-4 flex items-center justify-between">
+        <a href="#">
+            <img src="https://images.ctfassets.net/v3n26e09qg2r/7CSyedyArzTd5GP9LiuL78/f5a303f777ee3691a8ddfd5d36a7d591/headspace-logo.svg"
+                alt="Headspace Logo" class="h-10 w-auto">
+        </a>
+        <nav class="mt-4">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Meditate</a></li>
+                <li><a href="#" class="hover:text-gray-300">Sleep</a></li>
+                <li><a href="#" class="hover:text-gray-300">Move</a></li>
+                <li><a href="#" class="hover:text-gray-300">Focus</a></li>
+                <li><a href="#" class="hover:text-gray-300">Kids</a></li>
+                <li><a href="#" class="hover:text-gray-300">Mindful Eating</a></li>
+                <li><a href="#" class="hover:text-gray-300">Music</a></li>
+                <li><a href="#" class="hover:text-gray-300">Pro</a></li>
+                <li><a href="#" class="hover:text-gray-300">Gifts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto my-8 flex justify-center flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+            <div class="bg-yellow-400 p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Annual Plan Subscription</h2>
+                <form action="/annual-subscription" method="post" class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-sm font-medium text-gray-700">Name:</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-2 border rounded-md">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="email" class="text-sm font-medium text-gray-700">Email:</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-2 border rounded-md">
+                    </div>
+
+                    <button type="submit"
+                        class="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-300">
+                        Subscribe Now
+                    </button>
+                </form>
+            </div>
+
+            <div class="bg-yellow-400 p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Monthly Plan Subscription</h2>
+                <form action="/monthly-subscription" method="post" class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-sm font-medium text-gray-700">Name:</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-2 border rounded-md">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="email" class="text-sm font-medium text-gray-700">Email:</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-2 border rounded-md">
+                    </div>
+
+                    <button type="submit"
+                        class="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-300">
+                        Subscribe Now
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p class="mt-auto">&copy; 2023 Headspace. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
